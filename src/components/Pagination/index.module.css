@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    width: 24px; 
+    height: 24px;
+    border: none;
+    background-color: #4680B0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.currentPageBox {
+    height: 24px;
+    width: 30px;
+    border: 2px solid #4680B0;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.disabledButton {
+    background-color: #DCD8E0; 
+    cursor: not-allowed; 
+}
