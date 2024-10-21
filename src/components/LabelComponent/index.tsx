@@ -9,7 +9,7 @@ interface LabelComponentProps {
 const LabelComponent: React.FC<LabelComponentProps> = ({ label }) => {
   return (
     <div className={styles.container}>
-      <span className={styles.label}>{label}</span>
+      <span className={styles.labels}>{label}</span>
     </div>
   );
 };
