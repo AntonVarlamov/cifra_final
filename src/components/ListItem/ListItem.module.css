@@ -1,0 +1,17 @@
+.elem_lists {
+    border-bottom: .2px solid gray;
+    text-align: left;
+    width: 326px;
+    height: 60px;
+}
+
+.elem_list_name {
+    font-size: 12px;
+    margin: 0;
+}
+
+.elem_lists_p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
