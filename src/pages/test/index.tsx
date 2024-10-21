@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import ButtonIcon from '../../components/ButtonIcon';
 import Select from '../../components/select.tsx';
 
 export const Test: FC = () => {
@@ -15,6 +16,7 @@ export const Test: FC = () => {
         value="dsadsa"
         onChange={() => {}}
       />
+      <ButtonIcon text="dsadsa" onClick={() => {}} />
     </div>
   );
 };
