@@ -9,7 +9,7 @@ interface ButtonFilterComponentProps {
 
 const ButtonFilters: React.FC<ButtonFilterComponentProps> = ({ onSearch, onCancel }) => {
   return (
-    <div style={styles.buttonFilters}>
+    <div className={styles.buttonFilters}>
       <button
         type="button"
         className={`${styles.button} ${styles.buttonSearch}`}

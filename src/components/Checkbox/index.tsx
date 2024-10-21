@@ -26,14 +26,8 @@ const CheckboxComponent: React.FC<CheckboxComponentProps> = ({
         checked={checked}
         onChange={handleCheckboxChange}
       />
-      <div
-        style={{
-          ...styles.checkbox,
-          ...(checked ? styles.checkboxChecked : {}),
-        }}
-        className={`${styles.checkbox} ${checked ? styles.checkboxChecked : ''}`}
-      >
-        {checked && <div style={styles.checkmark} />}
+      <div className={`${styles.checkbox} ${checked ? styles.checkboxChecked : ''}`}>
+        {checked && <div className={styles.checkmark} />}
       </div>
       <span style={{ marginLeft: '8px' }} />
     </label>

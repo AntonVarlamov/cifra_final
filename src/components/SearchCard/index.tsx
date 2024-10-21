@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as CloseIcon } from '../../assets/close.svg';
-import { ReactComponent as MoreIcon } from '../../assets/more.svg';
+import CloseIcon from '../../assets/close.svg?react';
+import MoreIcon from '../../assets/more.svg?react';
 import ButtonIconComponent from '../ButtonIcon/index';
 
 import styles from './index.module.css';
