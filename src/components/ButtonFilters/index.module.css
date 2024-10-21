@@ -1,0 +1,24 @@
+.buttonFilters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 10px;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+}
+
+.buttonSearch {
+    border: 1px solid #79747E;
+    background-color: #2D609B;
+    color: white;
+}
+
+.buttonCancel {
+    border: 1px solid #D3D3D3;
+    color: #2D609B;
+    background-color: white;
+}

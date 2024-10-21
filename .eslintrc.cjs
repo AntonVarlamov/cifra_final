@@ -76,7 +76,7 @@ module.exports = {
     'no-debugger': 'error',
     'no-unused-vars': 'off',
     'import/no-extraneous-dependencies': 'off',
-    'import/no-unresolved': ['error', { ignore: ['^@/'] }],
+    'import/no-unresolved': ['error', { ignore: ['^@/', '.svg.*$'] }],
     'no-magic-numbers': 'off',
     'no-use-before-define': 'off',
     'no-param-reassign': [
