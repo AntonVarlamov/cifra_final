@@ -1,0 +1,34 @@
+.window {
+    position: absolute;
+    top: 480px;
+    border: 1px solid black;
+    width: 320px;
+    background-color:  #F7F2FA;
+
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+.headLine{
+    text-align: center;
+}
+.headContainer{
+    display: flex;
+}
+.LableContainer{
+    padding-left: 5px;
+    width: 90%;
+}
+.label{
+    font-size: 12px;
+}
+.labelDown{
+    font-size: 10px;
+}
+.lineSeparator{
+    width: 96%;
+    margin-left: 2%;
+}
+p{
+    font-size: 12px;
+    margin-left: 4%;
+}
