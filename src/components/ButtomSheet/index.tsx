@@ -57,7 +57,7 @@ const ButtomSheetComponent: React.FC<ButtomSheetProps> = ({ label, labelDown, is
                     <div className={styles.labelDown}>{labelDown}</div>
                 </div>
                 <div className={styles.checkboxContainer}>
-                    <CheckboxComponent id='' checked={checked} onChange={clickCheckBox}></CheckboxComponent>
+                    <CheckboxComponent id='' checked={checkValue} onChange={clickCheckBox}></CheckboxComponent>
                 </div>
             </div> 
             <div className={styles.lineSeparator}><LabelComponent label='' ></LabelComponent></div>
