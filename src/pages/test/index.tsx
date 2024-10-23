@@ -92,7 +92,7 @@ export const Test: FC = () => {
         label="Необязательный текст"
         required={0}
       />
-      <ButtonFiltersComponent onSearch={handleSearch} onCancel={handleCancel} />
+      <ButtonFiltersComponent onSearch={handleSearch} onCancel={handleCancel} text ={'Поиск'}/>
       <LineComponent label="Разделитель" />
       <ButtonIconComponent text="Поиск" onClick={handleClick} />
       <CheckboxComponent id="checkbox1" checked={isChecked1} onChange={setIsChecked1} />

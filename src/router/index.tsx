@@ -1,11 +1,17 @@
 import { createBrowserRouter } from 'react-router-dom';
+import Menu from '../pages/main';
+import Settings from '../pages/settings';
 
-import { Test } from '../pages/test';
-import  Menu  from '../pages/main';
 
 export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Menu />,
-  },
+    {
+        path: '/',
+        element: <Menu />,
+    },
+    {
+        path: '/settings',
+        element: <Settings />,
+    },
+    
+    // Добавьте другие маршруты по мере необходимости
 ]);
