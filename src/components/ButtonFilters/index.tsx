@@ -5,9 +5,10 @@ import styles from './index.module.css';
 interface ButtonFilterComponentProps {
   onSearch: () => void;
   onCancel: () => void;
+  text: string;
 }
 
-const ButtonFilters: React.FC<ButtonFilterComponentProps> = ({ onSearch, onCancel }) => {
+const ButtonFilters: React.FC<ButtonFilterComponentProps> = ({ onSearch, onCancel, text }) => {
   return (
     <div className={styles.buttonFilters}>
       <button
@@ -16,7 +17,7 @@ const ButtonFilters: React.FC<ButtonFilterComponentProps> = ({ onSearch, onCance
         id="button-search"
         onClick={onSearch}
       >
-        Поиск
+        {text}
       </button>
       <button
         type="button"
