@@ -28,7 +28,7 @@ import ButtonIconComponent from '../../components/ButtonIcon';
 import CheckboxComponent from '../../components/Checkbox';
 import InputComponent from '../../components/Input';
 import LineComponent from '../../components/LabelComponent';
-import ListItemComponent from '../../components/ListItem';
+import ListItemComponent from '../../components/ListItemComponent';
 import ListComponent from '../../components/ListItem';
 import MenuComponent from '../../components/Menu';
 import Pagination from '../../components/Pagination';
