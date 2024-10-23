@@ -27,7 +27,7 @@ const App: React.FC = () => {
                             Настройка 1
                         </a>
                         </Link>
-                        <Link to="/tasks">
+            <Link to="/tasks">
                         <a >
                             <IconFactory className={styles.icon}/>
                             Настройка 2

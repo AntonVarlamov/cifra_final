@@ -19,6 +19,8 @@
     justify-content: center;
     cursor: pointer;
     color: #333; 
+    text-decoration: none;
+    
 }
 
 .icon {
@@ -27,4 +29,5 @@
 
 .label {
     font-size: 12px; 
+    text-decoration: none;
 }

@@ -16,13 +16,13 @@ const Menu: React.FC<MenuProps> = ({  onBackClick }) => {
 
   return (
     <div className={styles.menu}>
-      <Link to="/">
+      <Link to="/" className={styles.button}>
       <div className={styles.button}  >
         <IconMenu className={styles.icon} />
         <span className={styles.label}>Меню</span>
       </div>
       </Link>
-      <Link to="/scan">
+      <Link to="/scan" className={styles.button}>
       <div className={styles.button} >
         <IconScan className={styles.icon} />
         <span className={styles.label}>Сканер</span>

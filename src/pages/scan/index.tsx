@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './index.module.css';
 
 import MenuComponent from '../../components/Menu';
-import IconBack from '../../assets/back.svg?react';
+import IconClose from '../../assets/close.svg?react';
 import InputComponent from '../../components/Input';
 import ButtonFiltersComponent from '../../components/ButtonFilters';
 
@@ -22,7 +22,7 @@ const App: React.FC = () => {
     return (
         <div>
             <header className={styles.header}>
-            <h1 className={styles.h1} id="page-title"><IconBack onClick={() => goBack()}/>Сканировать номер объекта</h1>
+            <h1 className={styles.h1} id="page-title"><IconClose className={styles.icon} onClick={() => goBack()}/>Сканировать номер объекта</h1>
             </header>
 
             <div className={styles.content} id="content">
