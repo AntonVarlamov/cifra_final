@@ -8,11 +8,16 @@ import Scan from '../pages/scan';
 import Settings1 from '../pages/settings1';
 import Settings2 from '../pages/settings2';
 import Tasks from '../pages/tasks';
+import Authotization from '../pages/authorization';
 
 
 export const router = createBrowserRouter([
-    {
-        path: '/',
+  {
+    path: '/',
+    element: <Authotization />,
+},  
+  {
+        path: '/main',
         element: <Menu />,
     },
     {

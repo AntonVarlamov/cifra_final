@@ -1,26 +1,23 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import styles from './index.module.css';
 
-interface InputComponentProps {
+interface InputLoginComponentProps {
   placeholder: string; 
   label: string;
   required: 0 | 1;
+  value: string; 
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void; 
+  type?: string; 
 }
 
-
-
-const InputComponent: React.FC<InputComponentProps> = ({
+const InputLoginComponent: React.FC<InputLoginComponentProps> = ({
   placeholder,
   label,
   required,
+  value,
+  onChange,
+  type = 'text', 
 }) => {
-  const [inputValue, setInputValue] = useState<string>('');
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
-  };
-
   return (
     <div className={styles.container}>
       <div className={styles.inputContainer}>
@@ -29,9 +26,9 @@ const InputComponent: React.FC<InputComponentProps> = ({
           {required === 1 && <span style={{ color: '#49454F' }}>*</span>}
         </label>
         <input
-          type="text"
-          value={inputValue}
-          onChange={handleChange}
+          type={type} 
+          value={value} 
+          onChange={onChange} 
           placeholder={placeholder}
           className={styles.input}
         />
@@ -40,4 +37,4 @@ const InputComponent: React.FC<InputComponentProps> = ({
   );
 };
 
-export default InputComponent;
+export default InputLoginComponent;
