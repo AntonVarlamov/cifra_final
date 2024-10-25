@@ -1,36 +1,28 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
-
+import { useNavigate } from 'react-router-dom';
 import IconLogo from '../../assets/logo.svg?react';
 import InputLoginComponent from '../../components/InputLogin';
 import ButtonComponent from '../../components/Button';
+import { login } from '../../services/authService'; 
 
 const App: React.FC = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('https://your-api-url.com/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    username,
-                    password,
-                }),
-            });
-
-            if (!response.ok) {
-                throw new Error('Ошибка авторизации');
-            }
-
-            const data = await response.json();
+            const data = await login(username, password); 
             console.log('Успешная авторизация:', data);
-            
+
+            const authToken = data.authToken; 
+            console.log('Токен:', authToken); 
+
+            navigate('/main'); 
         } catch (error) {
             console.error('Ошибка:', error);
+            alert("Ошибка авторизации")
         }
     };
 
@@ -55,7 +47,7 @@ const App: React.FC = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)} 
                 />
-                <ButtonComponent text="Войти" onClick={handleLogin} to='main'/>
+                <ButtonComponent text="Войти" onClick={handleLogin} />
             </div>
         </div>
     );
