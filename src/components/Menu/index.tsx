@@ -16,7 +16,7 @@ const Menu: React.FC<MenuProps> = ({  onBackClick }) => {
 
   return (
     <div className={styles.menu}>
-      <Link to="/" className={styles.button}>
+      <Link to="/main" className={styles.button}>
       <div className={styles.button}  >
         <IconMenu className={styles.icon} />
         <span className={styles.label}>Меню</span>
