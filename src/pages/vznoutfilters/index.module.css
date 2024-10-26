@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-
+    
     text-decoration: none;
     align-items: center;
     display: flex;
@@ -20,7 +20,6 @@ body {
     padding: 10px 0;
     margin-bottom: 50px;
     border-bottom: 0.2px solid black;
-    
 }
 .h1{
     margin-left: 8px;
