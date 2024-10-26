@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import IconSettings from '../../assets/settings.svg?react';
 import IconTask from '../../assets/tasks.svg?react';
 import IconInfo from '../../assets/info.svg?react';
@@ -12,10 +12,10 @@ import ButtonFiltersComponent from '../../components/ButtonFilters';
 
 
 const App: React.FC = () => {
-
+    const navigate = useNavigate();
     const goBack = () => {
         console.log('Going back');
-        
+        navigate(-1)
     };
 
     return (

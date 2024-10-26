@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './index.module.css';
-
+import {  useNavigate } from 'react-router-dom';
 import MenuComponent from '../../components/Menu';
 
 
 const App: React.FC = () => {
-
+    const navigate = useNavigate();
     const goBack = () => {
         console.log('Going back');
-        
+        navigate(-1)
     };
 
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
-
+import {  useNavigate } from 'react-router-dom';
 import MenuComponent from '../../components/Menu';
 import IconClose from '../../assets/close.svg?react';
 import InputComponent from '../../components/Input';
@@ -8,10 +8,10 @@ import ButtonFiltersComponent from '../../components/ButtonFilters';
 
 
 const App: React.FC = () => {
-
+    const navigate = useNavigate();
     const goBack = () => {
         console.log('Going back');
-        
+        navigate(-1)
     };
     const handleSearch = () => {
         console.log('Поиск выполнен!');

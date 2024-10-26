@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import MenuComponent from '../../components/Menu';
 import IconFactory from '../../assets/factory.svg?react';
@@ -8,10 +8,10 @@ import IconWarehouse from '../../assets/warehouse.svg?react';
 
 
 const App: React.FC = () => {
-
+    const navigate = useNavigate();
     const goBack = () => {
         console.log('Going back');
-        
+        navigate(-1)
     };
 
     return (
