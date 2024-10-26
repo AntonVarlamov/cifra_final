@@ -30,7 +30,7 @@ const App: React.FC = () => {
                             Внутризаводские накладные (Приход)
                         </a>
                         </Link>
-                        <Link to="/vznoutfilters">
+                        <Link to="/vznOutFilters">
                         <a >        
                             Внутризаводские накладные (Расход)
                         </a>

@@ -16,7 +16,7 @@ const App: React.FC = () => {
     };
     const handleSearch = () => {
         console.log('Поиск выполнен!');
-        navigate('/vznoutlist'); 
+        navigate('/vznOutList'); 
       };
       const handleCancel = () => {
         console.log('Отмена выполнена!');

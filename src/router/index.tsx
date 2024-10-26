@@ -9,7 +9,8 @@ import Settings1 from '../pages/settings1';
 import Settings2 from '../pages/settings2';
 import Tasks from '../pages/tasks';
 import Authotization from '../pages/authorization';
-import VznOutFilters from '../pages/vznoutfilters'
+import VznOutFilters from '../pages/vznOutFilters'
+import VznOutList from '../pages/vznOutList'
 
 export const router = createBrowserRouter([
   {
@@ -53,7 +54,11 @@ export const router = createBrowserRouter([
   element: <Tasks />,
 },
 {
-  path: '/vznoutfilters',
+  path: '/vznOutFilters',
   element: <VznOutFilters />,
+},
+{
+  path: '/vznOutList',
+  element: <VznOutList />,
 },
 ]);
