@@ -52,6 +52,4 @@ export const router = createBrowserRouter([
   path: '/tasks',
   element: <Tasks />,
 },
-    
-    // Добавьте другие маршруты по мере необходимости
 ]);

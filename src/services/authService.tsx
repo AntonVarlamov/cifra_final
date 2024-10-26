@@ -1,5 +1,3 @@
-'use client'
-
 export const login = async (username: string, password: string) => {
     const response = await fetch('http://92.55.15.91:8225/login.getAuthToken', {
         method: 'POST',
